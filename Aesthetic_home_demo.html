@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Aesthetic Clinic</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FFFFE0; /* Light yellow background */
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center content horizontally in the body */
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: right; /* Align header content to the right */
+            padding: 1em;
+            width: 100%; /* Take the full width of the body */
+            display: flex;
+            justify-content: space-between; /* Space the items evenly */
+        }
+
+        /* Style for the navigation menu */
+        nav {
+            display: inline;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            background-color: #555; /* Darker background color when hovered */
+        }
+
+        section {
+            padding: 2em;
+            text-align: left; /* Align content to the left */
+        }
+
+        section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #007BFF; /* Blue heading */
+        }
+
+        h3 {
+            font-size: 20px;
+            color: #333; /* Black text */
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .image {
+            width: 30%;
+            border-radius: 8px;
+            margin: 10px;
+        }
+
+        .image img {
+            max-width: 100%;
+            height: auto;
+        }
+	 footer {
+            background-color: #333; /* Blue background color */
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Demo Aesthetic Clinic</h1>
+        <!-- Navigation menu aligned to the right -->
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Services</a>
+            <a href="#">Gallery</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <section>
+        <!-- Add an aesthetic clinic image -->
+        <img src="https://www.thecheshireaestheticclinic.co.uk/wp-content/uploads/2019/11/slider2.jpg" alt="Aesthetic Clinic Image">
+        <h2>Welcome to Our Clinic</h2>
+        <p>At Demo Aesthetic Clinic, we are dedicated to providing exceptional aesthetic services to enhance your natural beauty. Our team of experienced professionals is committed to delivering personalized care in a comfortable and welcoming environment.</p>
+        <h3>Services We Offer</h3>
+        <ul>
+            <li>Botox and Dermal Fillers</li>
+            <li>Laser Hair Removal</li>
+            <li>Facial Rejuvenation</li>
+            <li>Microdermabrasion</li>
+        </ul>
+    </section>
+    <h3>Clinic Photo Gallery</h3>
+    <div class="image-container">
+        <div class="image">
+            <img src="https://www.blossomcosmeticclinic.co.uk/wp-content/uploads/2021/09/prices-banner-new.jpg">
+        </div>
+        <div class="image">
+            <img src="https://i.pinimg.com/550x/bc/ab/04/bcab0481c392b3e7816d8a0261b667ac.jpg">
+        </div>
+        <div class="image">
+            <img src="https://i.pinimg.com/736x/aa/65/a3/aa65a342c8f201f7d00cb0046af6a2bf.jpg">
+        </div>
+    </div>
+    <script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
+
+ <script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
+
+<!-- Add a "Book Appointment" section with a booking form -->
+<section style="background-color: #F6F6F6; color: #333; text-align: center; padding: 2em;">
+    <h2>Book an Appointment</h2>
+    <p>Ready to enhance your natural beauty? Schedule an appointment with us today.</p>
+    
+    <!-- Booking form -->
+    <form action="/submit_booking" method="post">
+        <label for="name" style="display: block; margin-bottom: 10px;">Name:</label>
+        <input type="text" id="name" name="name" required style="width: 100%; padding: 10px; margin-bottom: 20px;"><br>
+
+        <label for="email" style="display: block; margin-bottom: 10px;">Email:</label>
+        <input type="email" id="email" name="email" required style="width: 100%; padding: 10px; margin-bottom: 20px;"><br>
+
+        <label for="phone" style="display: block; margin-bottom: 10px;">Phone:</label>
+        <input type="tel" id="phone" name="phone" required style="width: 100%; padding: 10px; margin-bottom: 20px;"><br>
+
+        <label for="date" style="display: block; margin-bottom: 10px;">Preferred Date:</label>
+        <input type="date" id="date" name="date" required style="width: 100%; padding: 10px; margin-bottom: 20px;"><br>
+
+        <label for="message" style="display: block; margin-bottom: 10px;">Additional Information:</label>
+        <textarea id="message" name="message" rows="4" required style="width: 100%; padding: 10px; margin-bottom: 20px;"></textarea><br>
+
+        <button type="submit" style="color: #fff; background-color: #333; padding: 10px 20px; font-size: 18px; border: none;">Book Now</button>
+    </form>
+</section>
+
+<script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
+
+<script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
+<script>
+  window.botpressWebChat.init({
+      "composerPlaceholder": "Chat with Aesthetic Demo",
+      "botConversationDescription": "Created by DAB Technology Ltd",
+      "botId": "8e225199-1189-4aca-9005-0db7bceffcc7",
+      "hostUrl": "https://cdn.botpress.cloud/webchat/v0",
+      "messagingUrl": "https://messaging.botpress.cloud",
+      "clientId": "8e225199-1189-4aca-9005-0db7bceffcc7",
+      "webhookId": "74ffbeec-580e-4c09-8a92-8c9ebcb7e44f",
+      "lazySocket": true,
+      "themeName": "prism",
+      "botName": "Aesthetic Demo",
+      "phoneNumber": "+44-7442431627",
+      "emailAddress": "info@dabtechaiautomation.co.uk",
+      "stylesheet": "https://webchat-styler-css.botpress.app/prod/809690f2-16d7-4c42-ae89-cc8a9d0b6ae5/v51950/style.css",
+      "frontendVersion": "v0",
+      "useSessionStorage": true,
+      "theme": "prism",
+      "themeColor": "#2563eb"
+  });
+</script>
+
+    <footer>
+        &copy; 2023 Demo Aesthetic Clinic<br>
+        1234 Aesthetic Avenue, City, Country<br>
+        Phone: +1 (123) 456-7890<br>
+        Email: info@demoaestheticclinic.com
+    </footer>
+</body>
+</html>
