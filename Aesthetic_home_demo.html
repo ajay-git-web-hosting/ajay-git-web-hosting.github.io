@@ -174,6 +174,25 @@
         <button type="submit" style="color: #fff; background-color: #333; padding: 10px 20px; font-size: 18px; border: none;">Book Now</button>
     </form>
 </section>
+<div id="loaded-message"></div>
+    
+<script>
+    // Wait for the page to load
+    window.onload = function() {
+      // Use the "show" event to open the chat widget
+      window.botpressWebChat.sendEvent({ type: "show" });
+  
+      // Function to trigger a message after a delay
+      function triggerMessage() {
+        window.botpressWebChat.sendEvent({ type: "trigger" });
+      }
+  
+      // Add a delay using setTimeout to trigger the message
+      setTimeout(triggerMessage, 2000); // Delay of 2000 milliseconds (2 seconds)
+    };
+  </script>
+  
+
 
 <script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
 
